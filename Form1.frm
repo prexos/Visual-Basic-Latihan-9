@@ -22,27 +22,10 @@ Begin VB.Form Form1
    Begin VB.ComboBox Combo4 
       Height          =   360
       Left            =   8640
-      TabIndex        =   32
+      TabIndex        =   31
       Text            =   "Rabu"
       Top             =   2280
       Width           =   975
-   End
-   Begin VB.CommandButton Command1 
-      Caption         =   "NEXT"
-      BeginProperty Font 
-         Name            =   "Arial"
-         Size            =   12
-         Charset         =   0
-         Weight          =   700
-         Underline       =   0   'False
-         Italic          =   0   'False
-         Strikethrough   =   0   'False
-      EndProperty
-      Height          =   735
-      Left            =   8400
-      TabIndex        =   31
-      Top             =   9240
-      Width           =   1695
    End
    Begin VB.CommandButton justexit 
       Caption         =   "Keluar"
@@ -56,9 +39,9 @@ Begin VB.Form Form1
          Strikethrough   =   0   'False
       EndProperty
       Height          =   735
-      Left            =   5880
+      Left            =   7440
       TabIndex        =   30
-      Top             =   9240
+      Top             =   8760
       Width           =   2175
    End
    Begin VB.TextBox Text12 
@@ -365,9 +348,9 @@ Private Sub Form_Activate()
  Combo4.AddItem D
  Next
  'Menambahkan Tangg
- For T = 1 To 31
- Combo1.AddItem (Str(T))
- Next T
+ For t = 1 To 31
+ Combo1.AddItem (Str(t))
+ Next t
  'Menambahkan Bulan
  For B = 1 To 12
  Combo2.AddItem (MonthName(B))
